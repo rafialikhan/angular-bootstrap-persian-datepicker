@@ -368,6 +368,15 @@ this.getDate = function(date){
 	var persianDate = this.gregorianDate_to_persianDateArray(date);
 	return persianDate[2];
 };
+this.getHours = function(date){
+        return date.getHours();
+};
+this.getMinutes = function(date){
+        return date.getMinutes();
+};
+this.getSeconds= function(date){
+        return date.getSeconds();
+};
 this.gregorianDate_to_persianDateArray = function(date){
 	var persianDate = gregorian_to_persian(date.getFullYear(),date.getMonth() + 1,date.getDate());
 	--persianDate[1];
